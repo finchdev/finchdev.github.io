@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Оформление заказа</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="checkout-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="sandwich"><a class="sandwich__open-btn" href="#"><span class="sandwich-line sandwich-line--top"></span><span class="sandwich-line sandwich-line--center"></span><span class="sandwich-line sandwich-line--bottom"></span></a>
+              <div class="sandwich__content"><a class="sandwich__close-btn" href="#"></a>
+                <div class="timetable timetable--mrg-null">
+                  <svg class="svg-sprite-icon icon-timetable timetable__icon timetable__icon--color-white">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#timetable"></use>
+                  </svg>
+                  <div class="timetable__rightside">
+                    <h4 class="small-title timetable__title">Приём заказов</h4>
+                    <p class="small-description timetable__description timetable__description--color-white">ПН-ПТ: 10:00 - 00:00 ПТ-ВС: 10:00 - 02:00</p>
+                  </div>
+                </div>
+                <div class="order-callback order-callback--mrg-null order-callback--mrg-top">
+                  <svg class="svg-sprite-icon icon-phone order-callback__icon order-callback__icon--color-white">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                  </svg>
+                  <div class="order-callback__rightside">
+                    <h4 class="small-title order-callback__title">Заказ по телефону</h4><a class="small-description order-callback__description order-callback__description--color-white" href="tel:+ 30972453583">+ 3 (097) 245 - 35 - 83</a><a class="small-link order-callback__link" href="tel:+ 30972453583">Сделать заказ</a>
+                  </div>
+                </div><a class="main-nav__link main-nav__link--sandwich js-popup-link" href="#popup-review">Связь с администрацией</a>
+              </div>
+            </div>
+            <div class="logo"><a href="/"><img class="logo__img header__logo-img" src="static/images/general/logo.svg"><span class="logo__text">PRIME<span class="logo__text--type">PIZZA</span></span></a></div>
+            <div class="timetable header-top__timetable">
+              <svg class="svg-sprite-icon icon-timetable timetable__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#timetable"></use>
+              </svg>
+              <div class="timetable__rightside">
+                <h4 class="small-title timetable__title">Приём заказов</h4>
+                <p class="small-description timetable__description">ПН-ПТ: 10:00 - 00:00 ПТ-ВС: 10:00 - 02:00</p>
+              </div>
+            </div>
+            <div class="order-callback header-top__order-callback">
+              <svg class="svg-sprite-icon icon-phone order-callback__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+              </svg>
+              <div class="order-callback__rightside">
+                <h4 class="small-title order-callback__title">Заказ по телефону</h4><a class="small-description order-callback__description" href="tel:+30972453583">+ 3 (097) 245 - 35 - 83</a><a class="small-link order-callback__link" href="tel:+30972453583">Сделать заказ</a>
+              </div>
+            </div>
+            <div class="basket-prev header-top__basket-prev"><a class="basket-prev__link-item" href="basket.html">
+                <div class="basket-prev__icon">
+                  <svg class="svg-sprite-icon icon-basket basket-prev__icon-img">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#basket"></use>
+                  </svg>
+                </div>
+                <div class="basket-prev__description"><span class="basket-prev__title">Корзина</span><span class="basket-prev__count">4 товара</span><a class="small-link basket-prev__order-link" href="checkout.html">Оформить заказ</a></div></a></div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <nav class="main-nav header-top__main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+                <li class="main-nav__item"><a class="main-nav__link js-popup-link" href="#popup-review">Связь с администрацией</a></li>
+              </ul>
+            </nav>
+            <div class="search header-bottom__search">
+              <input class="input-field search__input-field" placeholder="Поиск">
+              <svg class="svg-sprite-icon icon-search-field header-bottom__search-icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#search-field"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="checkout">
+          <div class="container"><a class="checkout__back-link" href="basket.html">
+              <svg class="svg-sprite-icon icon-to-back checkout__back-icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#to-back"></use>
+              </svg><span class="checkout__back-text">Вернуться в корзину</span></a>
+            <form class="checkout__form">
+              <h3 class="checkout__form-title">Контактные данные</h3>
+              <div class="form-group checkout__form-group">
+                <input class="input-field input-field--checkout input-field--checkout-size" type="text" placeholder="Ваше имя">
+                <input class="input-field input-field--checkout input-field--checkout-size" type="phone" placeholder="Номер телефона">
+              </div>
+              <h3 class="checkout__form-title">Адресс доставки</h3>
+              <div class="form-group checkout__form-group">
+                <input class="input-field input-field--checkout input-field--checkout-size2" type="text" placeholder="Улица">
+                <input class="input-field input-field--checkout input-field--checkout-size2" type="text" placeholder="Номер дома">
+                <input class="input-field input-field--checkout input-field--checkout-size2" type="text" placeholder="Номер подъезда">
+              </div>
+              <h3 class="checkout__form-title">Способ оплаты</h3>
+              <div class="checkout__payment">
+                <div class="checkout__payment-nav checkout__form-group">
+                  <button class="btn-payment input-field--checkout btn-payment--active" show-tab="tab-bank">
+                    <div class="btn-payment__led"></div><span class="btn-payment__text">Банковский перевод</span>
+                  </button>
+                  <button class="btn-payment input-field--checkout" show-tab="tab-cash">
+                    <div class="btn-payment__led"></div><span class="btn-payment__text">Наличными при получении</span>
+                  </button>
+                </div>
+                <div class="checkout__payment-body">
+                  <div class="checkout__payment-tab checkout__payment-tab--active tab-bank">
+                    <div class="form-group checkout__form-group">
+                      <button class="input-field--checkout btn-payment__type btn-payment__type--active">
+                        <div class="btn-payment__led"></div><span class="btn-payment__type-text">MasterCard</span>
+                      </button>
+                      <button class="input-field--checkout btn-payment__type">
+                        <div class="btn-payment__led"></div><span class="btn-payment__type-text">Visa</span>
+                      </button>
+                      <button class="input-field--checkout btn-payment__type">
+                        <div class="btn-payment__led"></div><span class="btn-payment__type-text">Приват 24</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="checkout__payment-tab tab-cash"></div>
+                </div>
+              </div>
+              <div class="checkout__footer basket-field__footer">
+                <p class="checkout__total-price basket-field__total-price">Сумма заказа:<span class="checkout__total-price--num basket-field__total-price--num">480 грн</span></p><a class="btn btn__total-price" href="">Оформить заказ</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__main">
+          <div class="container">
+            <div class="logo footer__logo"><a href="/"><img src="static/images/general/logo.svg"><span class="logo__text">PRIME<span class="logo__text--type logo__text--color-white">PIZZA</span></span></a></div>
+            <ul class="footer-nav footer__item">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">Главная</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="javascript:void(0);">Акции</a></li>
+            </ul>
+            <ul class="footer-nav footer__item">
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="javascript:void(0);">Отзывы</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="javascript:void(0);">Оплата и доставка</a></li>
+            </ul>
+            <div class="footer__item order-callback header-top__order-callback footer__main__order-callback order-callback--mrg-null">
+              <svg class="svg-sprite-icon icon-phone order-callback__icon order-callback__icon--color-white">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+              </svg>
+              <div class="order-callback__rightside">
+                <h4 class="small-title order-callback__title">Заказ по телефону</h4><a class="small-description order-callback__description order-callback__description--color-white" href="tel:+ 30972453583">+ 3 (097) 245 - 35 - 83</a>
+              </div>
+            </div>
+            <div class="footer__item timetable timetable--mrg-null">
+              <svg class="svg-sprite-icon icon-timetable timetable__icon timetable__icon--color-white">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#timetable"></use>
+              </svg>
+              <div class="timetable__rightside">
+                <h4 class="small-title timetable__title">Приём заказов</h4>
+                <p class="small-description timetable__description timetable__description--color-white">ПН-ПТ: 10:00 - 00:00 ПТ-ВС: 10:00 - 02:00</p>
+              </div>
+            </div>
+            <div class="footer__item footer__social"><a class="footer__social-inst" href="javascript:void(0);"></a></div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <p class="footer__copyright">© 2019 Все права защищены.</p>
+          </div>
+        </div>
+      </footer><a class="callback-bt" href="tel:+30972453583">
+        <svg class="svg-sprite-icon icon-phone callback-bt__icon">
+          <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+        </svg></a>
+    </div>
+    <div class="popup mfp-hide" id="popup-review">
+      <div class="hide-on-success">
+        <p class="popup__title">Оставьте свой отзыв или пожелание</p>
+        <div class="popup__body">
+          <form class="form">
+            <div class="form-group">
+              <input class="input-field input-field--modal" placeholder="Ваше имя" type="text">
+              <input class="input-field input-field--modal" placeholder="Номер телефона*" type="phone" name="phone">
+            </div>
+            <textarea class="textarea-field" placeholder="Текст сообщения"></textarea>
+            <div class="form-group form-group--jc">
+              <div class="file-upload">
+                <div class="file-upload__btn">
+                  <label class="file-upload__btn_label">
+                    <input type="file">
+                    <svg class="svg-sprite-icon icon-file-upload file-upload__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#file-upload"></use>
+                    </svg><span class="file-upload__btn_text">Прикрепить файл</span>
+                  </label>
+                </div>
+              </div>
+              <input class="btn btn--modal" type="submit" value="Отправить">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="show-on-success">
+        <p class="popup__title-success">Ваше сообщение успешно отправлено!</p>
+      </div>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
