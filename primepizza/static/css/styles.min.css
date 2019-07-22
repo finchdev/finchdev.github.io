@@ -780,7 +780,7 @@ img.mfp-img {
 
 @font-face {
   font-family: 'Gilroy-Semibold';
-  src: url("../fonts/Gilroy-Semibold/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold/Gilroy-Semibold.ttf") format("truetype");
+  src: url("../fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy-SemiBold/Gilroy-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600; }
 
