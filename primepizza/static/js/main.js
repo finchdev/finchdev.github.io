@@ -5,7 +5,7 @@ $(document).ready(function () {
         $('.js-banner').slick({
             slidesToShow: 1,
             arrows: false,
-            autoplay: false,
+            autoplay: true,
             dots: true,
             autoplaySpeed: 1500,
             customPaging : function(slider, i) {
