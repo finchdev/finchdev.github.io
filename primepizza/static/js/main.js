@@ -5,7 +5,7 @@ $(document).ready(function () {
         $('.js-banner').slick({
             slidesToShow: 1,
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             dots: true,
             autoplaySpeed: 1500,
             customPaging : function(slider, i) {
@@ -119,6 +119,19 @@ $(document).ready(function () {
     };
 
 
+    var scrollTab = function () {
+      $(document).ready(function() {
+        $("a.scrollto").click(function() {
+          var elementClick = $(this).attr("href")
+          var destination = $(elementClick).offset().top;
+          jQuery("html:not(:animated),body:not(:animated)").animate({
+            scrollTop: destination
+          }, 800);
+          return false;
+  });
+});
+    }
+
     tabsCatalog();
     bannerSlider();
     sendwich();
@@ -128,4 +141,5 @@ $(document).ready(function () {
     formValidate();
     tabsCheckout();
     tabsCheckoutType();
+    scrollTab();
 });
