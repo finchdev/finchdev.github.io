@@ -394,6 +394,12 @@ button {
   max-width: 909px;
   margin-left: 100px;
   padding-bottom: 100px; }
+  .main-content--grow {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 717px; }
   @media screen and (max-width: 1100px) {
     .main-content {
       width: 100%;
@@ -728,6 +734,60 @@ input[type='range'] {
   background-image: -webkit-linear-gradient(right, #56c9d6 0%, #38d185 100%);
   background-image: linear-gradient(270deg, #56c9d6 0%, #38d185 100%); }
 
+.users {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .users__item {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.0551519);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 20px 30px;
+    margin-top: 25px; }
+    @media screen and (max-width: 440px) {
+      .users__item {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    .users__item * {
+      margin: 5px; }
+  .users__mail {
+    width: 300px;
+    color: #2d2e2c; }
+    @media screen and (max-width: 440px) {
+      .users__mail {
+        text-align: center; } }
+  .users__name {
+    color: #2d2e2c;
+    opacity: 0.5; }
+  .users__open {
+    color: #2d2e2c; }
+  .users__quest {
+    color: #003cff;
+    width: 95px;
+    text-align: center; }
+
 .tab-item {
   width: 130px;
   height: 130px;
@@ -775,6 +835,11 @@ input[type='range'] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 45px; }
+  @media screen and (max-width: 629px) {
+    .categories__list {
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
 
 .section-title {
   font-size: 32px;
