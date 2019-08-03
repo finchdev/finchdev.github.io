@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Информация о пользователе</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"><a class="logo header__logo" href=""><img src="images/general/logo.svg" alt="Логотип" width="27px" height="100%"></a>
+        <div class="header__main">
+          <h2 class="section-title">Язык</h2>
+        </div>
+      </header>
+      <div class="content">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html"><img src="images/content/nav-item1.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="users.html"><img src="images/content/nav-item2.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="info.html"><img src="images/content/nav-item3.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="lang.html"><img src="images/content/nav-item4.svg" alt="Раздел навигации" width="25px"></a></li>
+          </ul>
+        </nav>
+        <main class="main-content main-content--s-grow">
+          <div class="lang">
+            <div class="lang__btn"><a class="btn btn__quest-send btn-lang" href="">Новое слово</a></div>
+            <div class="lang__item">
+              <div class="lang__item-main">
+                <div class="lang__item-row">
+                  <p class="lang__item-title">Слово:</p>
+                  <p class="lang__item-desc" contenteditable="true" id="myText">Любовь</p>
+                </div>
+                <div class="lang__item-row">
+                  <p class="lang__item-title">Смысл:</p>
+                  <p class="lang__item-desc" contenteditable="true" id="myText">Каждый день Мы видим людей, все они видят Нас в состоянии зримого, ведь нас так обучили, видеть людей, но не понимать их.</p>
+                </div>
+              </div><a class="btn btn__quest-send btn-lang__save" href="" onclick="saveChanges()"> Сохранить</a>
+            </div>
+            <div class="lang__item">
+              <div class="lang__item-main">
+                <div class="lang__item-row">
+                  <p class="lang__item-title">Слово:</p>
+                  <p class="lang__item-desc" contenteditable="true" id="myText">Любовь</p>
+                </div>
+                <div class="lang__item-row">
+                  <p class="lang__item-title">Смысл:</p>
+                  <p class="lang__item-desc" contenteditable="true" id="myText">Каждый день Мы видим людей, все они видят Нас в состоянии зримого, ведь нас так обучили, видеть людей, но не понимать их.</p>
+                </div>
+              </div><a class="btn btn__quest-send btn-lang__save" href="" onclick="saveChanges()"> Сохранить</a>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer"></footer>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

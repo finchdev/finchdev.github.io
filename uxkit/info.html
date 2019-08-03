@@ -19,30 +19,23 @@
       <div class="content">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href=""><img src="images/content/nav-item1.svg" alt="Раздел навигации" width="25px"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href=""><img src="images/content/nav-item2.svg" alt="Раздел навигации" width="25px"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href=""><img src="images/content/nav-item3.svg" alt="Раздел навигации" width="25px"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href=""><img src="images/content/nav-item4.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html"><img src="images/content/nav-item1.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="users.html"><img src="images/content/nav-item2.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="info.html"><img src="images/content/nav-item3.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="lang.html"><img src="images/content/nav-item4.svg" alt="Раздел навигации" width="25px"></a></li>
           </ul>
         </nav>
         <main class="main-content">
           <div class="info">
             <div class="info-header">
-              <div class="users__item user-info"><span class="users__mail user-info__mail">Annakulmann@gmail.com</span><span class="users__name user-info__name">Анна</span></div><a class="btn btn__task" href="">Дать задачу</a>
+              <div class="users__item user-info"><span class="users__mail user-info__mail">Annakulmann@gmail.com</span><span class="users__name user-info__name">Анна</span></div><a class="btn btn__task scrollto" href="#m3">Дать задачу</a>
             </div>
             <div class="info-answer">
               <h3 class="section-title info-answer__title">Ответы на вопросы</h3>
               <div class="info-answer__item">
                 <p class="info-answer__sub-title">1. Выберите то, что Вам подходит</p>
-                <div class="info-answer__options">
-                  <p class="info-answer__options-item">Семья</p>
-                  <p class="info-answer__options-item">Бизнес</p>
-                  <p class="info-answer__options-item">Счастье</p>
-                  <p class="info-answer__options-item">Свобода</p>
-                  <p class="info-answer__options-item">Покой</p>
-                  <p class="info-answer__options-item">Развитие</p>
-                  <p class="info-answer__options-item">Мораль</p>
-                </div>
+                <div class="info-answer__options"><a class="info-answer__options-item" href="">Семья</a><a class="info-answer__options-item" href="">Бизнес</a><a class="info-answer__options-item" href="">Счастье</a></div>
+                <div class="info-answer__options2"><a class="info-answer__options-item info-answer__options-item--mod" href="">Свобода</a><a class="info-answer__options-item info-answer__options-item--mod" href="">Покой</a><a class="info-answer__options-item info-answer__options-item--mod" href="">Развитие</a><a class="info-answer__options-item info-answer__options-item--mod" href="">Мораль</a></div>
               </div>
               <div class="info-answer__item">
                 <p class="info-answer__sub-title">2. Ваша любимая книга</p>
@@ -52,6 +45,60 @@
                 <p class="info-answer__sub-title">3. Ваша цель в Жизни</p>
                 <p class="info-answer__desc">Быть рядом с теми, кто относится искренне ко мне</p>
               </div>
+            </div>
+            <div class="info-quest">
+              <h3 class="section-title info-quest__title">Вопросы Анны <span class="info-quest__title--num">+1</span></h3>
+              <p class="info-quest__user">Меня волнует ситуация с моими родными, я понимаю, что этот вопрос является личным, но хочу спросить совета, как поступить в сиутации, когда меня не понимают родные</p>
+              <div class="info-quest__admin">
+                <button class="volume__sound info-quest__volume-sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
+                <p class="info-quest__admin-text">Анна, не стоит беспокоится по этому поводу, ведь жизнь имеет ряд удивительных событий</p>
+              </div>
+              <p class="info-quest__user">Как поступить в Данной ситуации лучше всего?</p>
+              <textarea class="info-quest__textarea" placeholder="Ответ провидца"></textarea>
+              <div class="union-media info-quest__media">
+                <div class="file-upload">
+                  <div class="file-upload__btn">
+                    <label class="file-upload__btn_label">
+                      <input type="file"><span class="file-upload__btn_text">Прикрепить аудиофайл</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="volume">
+                  <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
+                  <div class="slider-container">
+                    <input id="slider" type="range" min="0" max="100" value="0">
+                    <div class="fill"></div>
+                  </div><span class="volume__time">6:12</span>
+                </div>
+              </div>
+              <button class="btn btn__quest-send">Ответить</button>
+            </div>
+            <div class="info-task">
+              <h3 class="section-title info-task__title">Все задачи</h3>
+              <div class="info-task__item">
+                <div class="info-task__item-main">
+                  <p class="info-task__item-name">Найти кролика</p>
+                  <p class="info-task__item-desc">В пятом углу есть кролик, его нужно найти</p>
+                </div>
+                <p class="info-task__item-status info-task__item-status--success">Выполнено</p>
+              </div>
+              <div class="info-task__item">
+                <div class="info-task__item-main">
+                  <p class="info-task__item-name">Правила игры</p>
+                  <p class="info-task__item-desc">Каждый раз видеть заново жизнь</p>
+                </div>
+                <p class="info-task__item-status info-task__item-status--insuccess">На выполнении</p>
+              </div>
+              <div class="info-task__form" id="m3">
+                <div class="info-task__field">
+                  <label class="info-task__label" for="title">Название:</label>
+                  <input class="info-task__input" type="text" id="title" placeholder="Новый квест">
+                </div>
+                <div class="info-task__field">
+                  <textarea class="info-task__textarea" placeholder="Что нужно сделать:"></textarea>
+                </div>
+              </div>
+              <button class="btn btn__quest-send btn__info-task"> Дать задание</button>
             </div>
           </div>
         </main>

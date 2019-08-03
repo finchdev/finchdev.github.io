@@ -19,10 +19,10 @@
       <div class="content">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href=""><img src="images/content/nav-item1.svg" alt="Раздел навигации" width="25px"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href=""><img src="images/content/nav-item2.svg" alt="Раздел навигации" width="25px"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href=""><img src="images/content/nav-item3.svg" alt="Раздел навигации" width="25px"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href=""><img src="images/content/nav-item4.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html"><img src="images/content/nav-item1.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="users.html"><img src="images/content/nav-item2.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="info.html"><img src="images/content/nav-item3.svg" alt="Раздел навигации" width="25px"></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="lang.html"><img src="images/content/nav-item4.svg" alt="Раздел навигации" width="25px"></a></li>
           </ul>
         </nav>
         <main class="main-content">
@@ -33,7 +33,7 @@
             <div class="enlight-body" id="m1">
               <div class="tab tab-family">
                 <div class="family-header">
-                  <h2 class="section-title">Семья</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Семья</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -41,11 +41,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -56,11 +56,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -123,7 +119,7 @@
               </div>
               <div class="tab tab-business">
                 <div class="family-header">
-                  <h2 class="section-title">Дело</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Дело</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -131,11 +127,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -146,11 +142,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -213,7 +205,7 @@
               </div>
               <div class="tab tab-life">
                 <div class="family-header">
-                  <h2 class="section-title">Жизнь</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Жизнь</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -221,11 +213,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -236,11 +228,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -303,7 +291,7 @@
               </div>
               <div class="tab tab-freedom">
                 <div class="family-header">
-                  <h2 class="section-title">Свобода</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Свобода</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -311,11 +299,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -326,11 +314,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -393,7 +377,7 @@
               </div>
               <div class="tab tab-true">
                 <div class="family-header">
-                  <h2 class="section-title">Правда</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Правда</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -401,11 +385,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -416,11 +400,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -483,7 +463,7 @@
               </div>
               <div class="tab tab-honesty">
                 <div class="family-header">
-                  <h2 class="section-title">Честность</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Честность</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -491,11 +471,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -506,11 +486,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -573,7 +549,7 @@
               </div>
               <div class="tab tab-relations">
                 <div class="family-header">
-                  <h2 class="section-title">Отношения</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Отношения</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -581,11 +557,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -596,11 +572,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -663,7 +635,7 @@
               </div>
               <div class="tab tab-rules">
                 <div class="family-header">
-                  <h2 class="section-title">Правила</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Правила</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -671,11 +643,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -686,11 +658,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -753,7 +721,7 @@
               </div>
               <div class="tab tab-laws">
                 <div class="family-header">
-                  <h2 class="section-title">Законы</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Законы</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -761,11 +729,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -776,11 +744,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -843,7 +807,7 @@
               </div>
               <div class="tab tab-relax">
                 <div class="family-header">
-                  <h2 class="section-title">Отдых</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Отдых</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -851,11 +815,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -866,11 +830,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
@@ -933,7 +893,7 @@
               </div>
               <div class="tab tab-care">
                 <div class="family-header">
-                  <h2 class="section-title">Забота</h2><a class="edit-title" href="">Редактировать</a>
+                  <h2 class="section-title" contenteditable="true" id="myText">Забота</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                 </div>
                 <ul class="categories__list family-categories__list"><a class="enlight-categories__item tab-item scrollto" show-tab="tab-city" href="#m2"><span class="tab-item__text enlight-categories__item-title">В городе слов</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-strategy" href="#m2"><span class="tab-item__text enlight-categories__item-title">Стратегия</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-scripts" href="#m2"><span class="tab-item__text enlight-categories__item-title">Сценарии</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-result" href="#m2"><span class="tab-item__text enlight-categories__item-title">Результат</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-problems" href="#m2"><span class="tab-item__text enlight-categories__item-title">Проблемы</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-love" href="#m2"><span class="tab-item__text enlight-categories__item-title">Любовь</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-success" href="#m2"><span class="tab-item__text enlight-categories__item-title">Успехи</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-lose" href="#m2"><span class="tab-item__text enlight-categories__item-title">Поражения</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-senses" href="#m2"><span class="tab-item__text enlight-categories__item-title">Чувства</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-views" href="#m2"><span class="tab-item__text enlight-categories__item-title">Взгляды</span></a><a class="enlight-categories__item tab-item scrollto" show-tab="tab-union" href="#m2"><span class="tab-item__text enlight-categories__item-title">Союз</span></a>
                   <li class="enlight-categories__item tab-item"><span class="enlight-categories__item-title">+</span></li>
@@ -941,11 +901,11 @@
                 <div class="enlight-body" id="m2">
                   <div class="tab tab-city union">
                     <div class="family-header">
-                      <h2 class="section-title">В городе слов</h2><a class="edit-title" href="">Редактировать</a>
+                      <h2 class="section-title" contenteditable="true" id="myText">В городе слов</h2><a class="edit-title" href="" onclick="saveChanges()">Редактировать</a>
                     </div>
                     <div class="union">
                       <div class="union-info">
-                        <div class="union-info__text">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
+                        <div class="union-info__text" contenteditable="true">То, что люди называют союзом всегда есть правила, с помощью которых они становятся сильнее. Каждый момент достигается засчет истины, каждая истина засчет момента…</div>
                       </div>
                       <div class="union-media">
                         <div class="file-upload">
@@ -956,11 +916,7 @@
                           </div>
                         </div>
                         <div class="volume">
-                          <button class="volume__sound">
-                            <svg class="svg-sprite-icon icon-sound volume__sound-icon">
-                              <use xlink:href="images/svg/symbol/sprite.svg#sound"></use>
-                            </svg>
-                          </button>
+                          <button class="volume__sound"><img class="volume__sound-icon" src="images/content/sound.svg" alt="sound"></button>
                           <div class="slider-container">
                             <input id="slider" type="range" min="0" max="100" value="0">
                             <div class="fill"></div>
