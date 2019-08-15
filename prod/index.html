@@ -57,7 +57,31 @@
         </div>
         <div class="header-main">
           <div class="container">
-                        <div class="logo"><a class="logo__link" href="#"><img class="logo__img" src="img/inhtml/logo.png" alt="Логотип"></a></div>
+            <div class="sandwich"><a class="sandwich__open-btn" href="#" id="menu"><span class="sandwich__btn--top-line"></span><span class="sandwich__btn--center-line"></span><span class="sandwich__btn--bottom-line"></span></a>
+              <div id="menuDiv"><a class="sandwich__close-btn" href="#" id="active_menu">
+                  <svg class="svg-sprite-icon icon-close sandwich__close-icon">
+                    <use xlink:href="img/svg/symbol/sprite.svg#close"></use>
+                  </svg></a>
+                <div class="sandwich__wrap">
+                  <div class="sandwich__body">
+                    <nav class="sandwich-nav">
+                      <ul class="sandwich-nav__list">
+                                    <li class="sandwich-nav__item"><a class="sandwich-nav__link sandwich-nav__link--active" href="index.html">Главная</a></li>
+                                    <li class="sandwich-nav__item"><a class="sandwich-nav__link undefined" href="index.html">Каталог</a></li>
+                                    <li class="sandwich-nav__item"><a class="sandwich-nav__link undefined" href="index.html">Избранное</a></li>
+                                    <li class="sandwich-nav__item"><a class="sandwich-nav__link undefined" href="index.html">Контакты</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="sandwich__footer"><a class="sandwich__wishlist" href="#">
+                      <svg class="svg-sprite-icon icon-wishlist sandwich__wishlist-icon">
+                        <use xlink:href="img/svg/symbol/sprite.svg#wishlist"></use>
+                      </svg></a><a class="feedback-link header-top__feedback-link" href="#">Заказать обратный звонок</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        <div class="logo header__logo"><a class="logo__link" href="#"><img class="logo__img" src="img/inhtml/logo.png" alt="Логотип"></a></div>
             <div class="search-input">
               <input class="search-input__field" type="text" placeholder="Поиск..."><a class="search-input__btn" href="#">
                 <svg class="svg-sprite-icon icon-search search-input__btn-icon">
@@ -68,13 +92,10 @@
                 <svg class="svg-sprite-icon icon-wishlist header-main__wishlist-icon">
                   <use xlink:href="img/svg/symbol/sprite.svg#wishlist"></use>
                 </svg></a>
-              <div class="basket-prev">
-                <div class="basket-prev__side">
+              <div class="basket-prev"><a class="basket-prev__side" href="">
                   <svg class="svg-sprite-icon icon-basket-prev basket-prev__icon">
                     <use xlink:href="img/svg/symbol/sprite.svg#basket-prev"></use>
-                  </svg><span class="basket-prev__count">5</span>
-                </div><a class="basket-prev__info" href=""><span class="basket-prev__title">Корзина</span><span class="basket-prev__price">3200 грн.</span></a>
-              </div>
+                  </svg><span class="basket-prev__count">5</span></a><a class="basket-prev__info" href=""><span class="basket-prev__title">Корзина</span><span class="basket-prev__price">3200 грн.</span></a></div>
             </div>
           </div>
         </div>
@@ -143,71 +164,97 @@
       <div class="top-sales">
         <div class="container">
           <div class="top-sales__header">
-            <h2 class="section-title">Лидеры продаж. Топ-10 лучших ⚡🔌 стабилизаторов напряжения</h2>
+            <h2 class="section-title">Лидеры продаж. Топ-10 ⚡🔌 стабилизаторов напряжения</h2>
+            <ul class="top-products__arrows">
+              <li class="top-sales__left-arrow">
+                <svg class="svg-sprite-icon icon-left_arrow top-sales__left-arrow__icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#left_arrow"></use>
+                </svg>
+              </li>
+              <li class="top-sales__right-arrow">
+                <svg class="svg-sprite-icon icon-right_arrow top-sales__right-arrow__icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#right_arrow"></use>
+                </svg>
+              </li>
+            </ul>
           </div>
           <div class="top-sales__body">
-            <div class="top-sales__row">
-                    <div class="product-card">
+            <div class="top-sales__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
-                      <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
-                      <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
-                      <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
+                      <div class="product-card__body"><span class="product-card__name">Example Name1</span><span class="product-card__price">200 грн.</span></div></a>
             </div>
-            <div class="top-sales__row">
-                    <div class="product-card">
+            <div class="top-sales__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
+                      <div class="product-card__body"><span class="product-card__name">Example Name2</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-sales__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
+                      <div class="product-card__body"><span class="product-card__name">Example Name3</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-sales__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
+                      <div class="product-card__body"><span class="product-card__name">Example Name4</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-sales__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
+                      <div class="product-card__body"><span class="product-card__name">Example Name5</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-sales__item"><a class="product-card" href="#">
+                      <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
+                      <div class="product-card__body"><span class="product-card__name">Example Name6</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-sales__item"><a class="product-card" href="#">
+                      <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
+                      <div class="product-card__body"><span class="product-card__name">Example Name7</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-sales__item"><a class="product-card" href="#">
+                      <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
+                      <div class="product-card__body"><span class="product-card__name">Example Name8</span><span class="product-card__price">200 грн.</span></div></a>
             </div>
           </div>
         </div>
       </div>
       <div class="top-products">
         <div class="container">
-          <div class="top-sales__header">
-            <h2 class="section-title">Топ-10 лучших ⚡🔌 стабилизаторов напряжения</h2>
+          <div class="top-products__header">
+            <h2 class="section-title">Топ-10 лучших ⚡🔌 товаров</h2>
+            <ul class="top-products__arrows">
+              <li class="top-products__left-arrow">
+                <svg class="svg-sprite-icon icon-left_arrow top-products__left-arrow__icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#left_arrow"></use>
+                </svg>
+              </li>
+              <li class="top-products__right-arrow">
+                <svg class="svg-sprite-icon icon-right_arrow top-products__right-arrow__icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#right_arrow"></use>
+                </svg>
+              </li>
+            </ul>
           </div>
-          <div class="top-sales__body">
-            <div class="top-sales__row">
-                    <div class="product-card">
+          <div class="top-products__body">
+            <div class="top-products__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
+                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-products__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
+                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-products__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
-                    <div class="product-card">
+                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-products__item"><a class="product-card" href="#">
                       <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
-                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div>
-                    </div>
+                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-products__item"><a class="product-card" href="#">
+                      <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
+                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div></a>
+            </div>
+            <div class="top-products__item"><a class="product-card" href="#">
+                      <div class="product-card__header"><img class="product-card__img" src="img/inhtml/card/card-img.jpg" alt="Фото продукта"></div>
+                      <div class="product-card__body"><span class="product-card__name">Example Name</span><span class="product-card__price">200 грн.</span></div></a>
             </div>
           </div>
         </div>
@@ -252,8 +299,12 @@
       <footer class="footer">
         <div class="container">
           <div class="footer-main">
-                        <div class="logo"><a class="logo__link" href="#"><img class="logo__img" src="img/inhtml/footer-logo.png" alt="Логотип"></a></div>
-            <nav class="footer-nav">
+                        <div class="logo footer__logo"><a class="logo__link" href="#"><img class="logo__img" src="img/inhtml/footer-logo.png" alt="Логотип"></a></div>
+            <div class="footer-menu"><a class="footer-menu__link" href="" id="showFooterMenu">Меню
+                <svg class="svg-sprite-icon icon-down-arrow footer-menu__link-icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#down-arrow"></use>
+                </svg></a></div>
+            <nav class="footer-nav" id="footer-nav">
               <ul class="footer-nav__list footer-nav__info">
                 <li>
                   <h3 class="footer-block-title">Информация</h3>
@@ -262,7 +313,7 @@
                             <li class="footer-nav__item"><a class="footer-nav__link" href="#">Доставка</a></li>
                             <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
               </ul>
-              <ul class="footer-nav__list footer-nav_account">
+              <ul class="footer-nav__list footer-nav__account">
                 <li>
                   <h3 class="footer-block-title">Аккаунт</h3>
                 </li>
@@ -291,7 +342,7 @@
               </div>
             </div>
             <div class="footer__social">
-              <h3 class="footer-block-title">Социальные сети</h3>
+              <h3 class="footer-block-title footer__social-title">Социальные сети</h3>
               <div class="footer__social-links"><a class="footer__social-item" href="">
                   <svg class="svg-sprite-icon icon-google footer__social-icon">
                     <use xlink:href="img/svg/symbol/sprite.svg#google"></use>
@@ -310,6 +361,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/common.min.js"></script>
   </body>
