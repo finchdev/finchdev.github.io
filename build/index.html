@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <div class="content">
+        <section class="hero" style="background-image: url(static/images/content/hero-bg.jpg);">
+          <div class="sandwich">
+            <div id="menu"><span class="sandwich__line"></span><span class="sandwich__line"></span><span class="sandwich__line"></span></div>
+            <div id="menuDiv"><a href="#" id="active_menu">
+                <svg class="svg-sprite-icon icon-close sandwich__close-icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#close"></use>
+                </svg></a>
+              <div class="sandwich__menu"><a href="/">Главная</a><a href="#about">О нас</a><a href="#catalog">Каталог</a><a href="#quest">Ответы на вопросы</a><a href="#contacts">Контакты</a><a href="tel:+79841409050">+7 (984) 140-90-50</a></div>
+            </div>
+          </div>
+          <div class="container">
+            <header class="header">
+              <div class="header__top"><a class="logo header__logo" href="/"><img class="logo__img" src="static/images/general/logo.png" alt="Логотип"></a>
+                <div class="header__top-nav">
+                  <div class="nav main-nav"><a class="main-nav__link scrollto" href="/">Главная</a><a class="main-nav__link scrollto" href="#about">О нас</a><a class="main-nav__link scrollto" href="#catalog">Каталог</a><a class="main-nav__link scrollto" href="#quest">Ответы на вопросы</a><a class="main-nav__link scrollto" href="#contacts">Контакты</a></div><a class="header__phone" href="tel:+79841409050">+7 (984) 140-90-50</a>
+                </div>
+              </div>
+            </header>
+            <div class="hero__info">
+              <h1 class="main-title hero__title">Снегоуборочная техника</h1><span class="hero__delivery">Доставка по всей России</span><a class="hero__info-link" href="#catalog">Каталог</a>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <h2 class="section-title">О компании</h2>
+            <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container">
+            <div class="advantages__item">
+              <div class="advantages__image"><span class="advantages__image-decor"></span>
+                <svg class="svg-sprite-icon icon-compass advantages__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#compass"></use>
+                </svg>
+              </div>
+              <h4 class="advantages__title">Lorem ipsum dolor sit amet</h4>
+              <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__image"><span class="advantages__image-decor"></span>
+                <svg class="svg-sprite-icon icon-settings advantages__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#settings"></use>
+                </svg>
+              </div>
+              <h4 class="advantages__title">Lorem ipsum dolor sit amet</h4>
+              <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__image"><span class="advantages__image-decor"></span>
+                <svg class="svg-sprite-icon icon-yin-yang advantages__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#yin-yang"></use>
+                </svg>
+              </div>
+              <h4 class="advantages__title">Lorem ipsum dolor sit amet</h4>
+              <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </section>
+        <section class="catalog" id="catalog">
+          <div class="container">
+            <h2 class="section-title">Каталог</h2>
+            <div class="catalog__header">
+              <nav class="catalog__nav"><a class="catalog__nav-link catalog__nav-link--active" href="javascript:void(0);" show-tab="equipment">Снегоуборочная техника</a><a class="catalog__nav-link" href="javascript:void(0);" show-tab="parts">Запчасти</a></nav>
+              <div class="sort"><span class="sort-title">Сортировать по:</span>
+                <select class="sort__select">
+                  <option class="sort__select-option">Цене</option>
+                  <option class="sort__select-option">Мощности</option>
+                  <option class="sort__select-option">Году</option>
+                </select>
+              </div>
+              <div class="catalog__search">
+                <input class="catalog__search-field" type="text" placeholder="Поиск">
+                <svg class="svg-sprite-icon icon-search catalog__search-icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="catalog__body">
+              <div class="catalog__body-item catalog__body-item--active equipment">
+                <div class="catalog__row">
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more js-popup-link" href="#popup-product">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more popup-product" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__row">
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__body-item parts">
+                <div class="catalog__row">
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__row">
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="catalog-product" style="background: url(static/images/content/catalog-product.jpg);">
+                    <div class="catalog-product__wrap"><span class="catalog-product__watermark">Logo</span>
+                      <div class="catalog-product__info"><span class="catalog-product__text">Honda HS760</span><span class="catalog-product__text">8 л.с. (5,9 кВт)</span><span class="catalog-product__text">150000Р</span></div><a class="catalog-product__more" href="/">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination catalog__pagination"><span class="pagination__title">Страница:</span>
+              <ul class="pagination__list">
+                <li class="pagination__item"><a class="pagination__link pagination__link--active" href="/">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="/">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="/">3</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="special-variant">
+          <div class="container">
+            <h2 class="section-title">Не нашли подходящего варианта?</h2>
+            <p class="special-variant__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn special-variant__send">Заказать</button>
+          </div>
+        </section>
+        <section class="questions" id="quest">
+          <div class="container">
+            <h2 class="section-title">Ответы на вопросы</h2>
+            <div class="questions__body">
+              <div class="questions__item"><span class="questions__item-title">Как менять масло?</span>
+                <p class="questions__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+              <div class="questions__item"><span class="questions__item-title">Сервисное обслуживание</span>
+                <p class="questions__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+              <div class="questions__item"><span class="questions__item-title">Вопрос номер 3</span>
+                <p class="questions__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+              <div class="questions__item"><span class="questions__item-title">Вопрос номер 4</span>
+                <p class="questions__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts__card">
+              <div class="contacts__map"></div>
+              <div class="contacts__info">
+                <div class="contacts__info-call">
+                  <div class="contacts__info-call__item">
+                    <svg class="svg-sprite-icon icon-phone contacts__info-call__icon contacts__info-call__phone-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg><a class="contacts__info-call__text" href="tel:89841409050">8 (984) 140-90-50</a>
+                  </div>
+                  <div class="contacts__info-call__item">
+                    <svg class="svg-sprite-icon icon-mail contacts__info-call__icon contacts__info-call__mail-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
+                    </svg><a class="contacts__info-call__text" href="mailto:mailadress@email.ru">mailadress@email.ru</a>
+                  </div>
+                  <div class="contacts__info-call__item">
+                    <svg class="svg-sprite-icon icon-location contacts__info-call__icon contacts__info-call__location-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#location"></use>
+                    </svg><span class="contacts__info-call__text">Владивосток ул. Днепровская 21д</span>
+                  </div>
+                </div>
+                <form class="contacts__form" action="" method="POST"><span class="contacts__form-title">Оставьте свои данные и мы свяжемся с вами:</span>
+                  <label class="contacts__form-label">Как вас зовут?</label>
+                  <input class="contacts__form-field" type="text" placeholder="Имя">
+                  <label class="contacts__form-label">Номер телефона для связи с вами:</label>
+                  <input class="contacts__form-field" type="text" placeholder="+7 (999) 999-99-99">
+                  <button class="contacts__form-send">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container"><span class="footer__text">© 2019 Все права защищены domain-name.ru</span><span class="footer__text">ИНН 999999999999</span><span class="footer__text">ОГРН 99999999999999999</span></div>
+        </footer>
+        <div class="popup mfp-hide" id="popup-product">
+          <div class="popup__close">
+            <svg class="svg-sprite-icon icon-popup-close popup__close-icon">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#popup-close"></use>
+            </svg>
+          </div>
+          <div class="popup__body">
+            <div class="popup__slider">
+              <div class="popup__slider-item"><img src="static/images/content/popup-slider-item.png" alt="фото товара"></div>
+              <div class="popup__slider-item"><img src="static/images/content/popup-slider-item.png" alt="фото товара"></div>
+              <div class="popup__slider-item"><img src="static/images/content/popup-slider-item.png" alt="фото товара"></div>
+              <div class="popup__slider-item"><img src="static/images/content/popup-slider-item.png" alt="фото товара"></div>
+            </div>
+            <div class="popup__info"><span>123</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
