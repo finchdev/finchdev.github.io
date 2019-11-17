@@ -17,7 +17,7 @@ $('.slider').slick({
     variableWidth: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     prevArrow: document.querySelector('.prev'),
     nextArrow: document.querySelector('.next'),
     autoplaySpeed: 3000,
